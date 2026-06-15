@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  
+  background: url('download.jpg') no-repeat center center fixed;
+  background-size: cover;
+
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.85); /* semi-transparent so wallpaper shows */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  width: 280px;
+  text-align: center;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: #e6f0ff;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background: #4a90e2; /* blue theme */
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  background: #357ab8;
+  transform: scale(1.1);
+}
+
+button:active {
+  background: #2a5d91;
+}
